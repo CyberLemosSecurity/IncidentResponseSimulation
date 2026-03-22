@@ -52,6 +52,7 @@ Repeated GET requests for .exe files
 All requests originated from the same source IP
 Short time interval between downloads
 Use of both browser and PowerShell (different User-Agents)
+<img width="1275" height="769" alt="image" src="https://github.com/user-attachments/assets/33ee5bbf-5455-422b-b5d3-4b5de2959ef4" />
 
 Example pattern observed:
 
