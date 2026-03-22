@@ -109,3 +109,28 @@ Indicators of compromise
 User or system behavior anomalies
 
 Combining network monitoring with endpoint logging (e.g., via Wazuh) significantly improves detection capabilities in real-world environments.
+
+9. Incident Response
+
+Upon identifying suspicious HTTP downloads, the following response actions were considered:
+
+Containment
+Isolated the affected host from the network
+Blocked communication with the web server hosting the files
+
+Eradication
+Removed downloaded executable files from the system
+Scanned the host for malware using security tools
+
+Investigation
+Reviewed additional logs (PowerShell, system events)
+Correlated activity with SIEM alerts using Wazuh
+
+Recovery
+Restored the system to a trusted state
+Re-enabled network access after validation
+
+Lessons Learned
+HTTP traffic allowed file inspection but lacks security
+Monitoring PowerShell usage is critical
+User awareness is essential to prevent similar incidents.
